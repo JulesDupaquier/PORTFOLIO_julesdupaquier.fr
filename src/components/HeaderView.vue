@@ -52,7 +52,6 @@
 .link {
   position: relative;
   display: inline-block;
-  text-decoration: none;
   color: #ffffff;
   transition: color 0.3s; /* Transition de couleur de texte de 0.3 seconde */
 }
@@ -64,7 +63,7 @@
   width: 0;
   height: 2px; /* Ajustez l'épaisseur de la ligne */
   background-color: #ff0000; /* Couleur de la ligne */
-  transition: width 0.3s; /* Transition de largeur de la ligne de 0.3 seconde */
+  transition: width 0.3s, left 0.3s; /* Transition de largeur de la ligne et de la position à gauche de 0.3 seconde */
 }
 
 .link::before {
@@ -74,7 +73,7 @@
 
 .link::after {
   bottom: -2px; /* Ligne en dessous du texte */
-  left: 0;
+  right: 0;
 }
 
 .link:hover {
@@ -84,6 +83,11 @@
 .link:hover::before,
 .link:hover::after {
   width: 100%; /* Les lignes apparaissent de gauche à droite lors du survol */
+  left: 0; /* Réinitialisation de la position à gauche */
+}
+
+.link:hover::after {
+  bottom: -2px; /* Réinitialisation de la position en dessous */
 }
 
 
@@ -94,7 +98,7 @@
   padding: 9px 15px;
   font-family: michroma;
   font-size: 14px;
-  transition: border 0.5s, color 0.5s, border-radius 1s;
+  transition: color 0.5s, border 0.5s, border-radius 1s, transform 1s;
 }
 
 .Header-button:hover {
@@ -104,7 +108,7 @@
   padding: 9px 15px;
   font-family: michroma;
   font-size: 14px;
-  transform:translate();
 }
+
 
 </style>
