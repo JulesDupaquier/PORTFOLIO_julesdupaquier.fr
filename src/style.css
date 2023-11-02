@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  cursor: crosshair;
+}
+
+a {
+    cursor: crosshair;
+}
+
+// Index-Video
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+// Élements
+
+header {
+  background-color: #000000;
+}
+
+h1 {         
+  color: #000000;             
+  font-family: michroma, sans;
+  ,text-align: left;     
+  line-height: 1.5;         
+  text-transform: uppercase; 
+  letter-spacing: 2px;      
+}
+
+h2 {
+  font-size: 36px;                       
+  font-family: inter;
+  text-align: center;      
+  text-transform: uppercase; 
+  letter-spacing: 2px;      
+}
