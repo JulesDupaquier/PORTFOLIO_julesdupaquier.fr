@@ -1,5 +1,5 @@
 <template>
-<div class="header bg-noir">
+<div class="header">
   <div class="Logo my-auto mx-auto">
     <RouterLink to="/">
       <img src="/icones/logo-64x.svg" alt="Logo-64x">
@@ -42,7 +42,7 @@
 }
 
 .Links {
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
   font-family: michroma;
   margin-top: auto;
@@ -52,7 +52,7 @@
 .link {
   position: relative;
   display: inline-block;
-  color: #ffffff;
+  color: #000000;
   transition: color 0.3s; /* Transition de couleur de texte de 0.3 seconde */
 }
 
@@ -92,8 +92,8 @@
 
 
 .Header-button {
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
   border-radius: 30px;
   padding: 9px 15px;
   font-family: michroma;
