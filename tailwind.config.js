@@ -11,6 +11,7 @@ module.exports = {
       },
       fontSize: {
         'marquee': ['6rem', {
+          fontFamily: 'Helvetica',
           lineHeight: 'normal',
           letterSpacing: '-0.01em',
           fontWeight: '900',
