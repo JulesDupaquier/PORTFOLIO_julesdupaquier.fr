@@ -2,7 +2,7 @@
 <div class="header">
   <div class="Logo my-auto mx-auto">
     <RouterLink to="/">
-      <img src="/icones/logo-64x.svg" alt="Logo-64x">
+      <img src="/icones/logo.svg" alt="Logo">
     </RouterLink>
   </div>
   <div class="Links text-center space-x-36 my-auto">
@@ -22,7 +22,7 @@
 <style>
 
 .header {
-  z-index: 1;
+  background-color: #000000;
   display: grid; 
   grid-template-columns: 25% 37.5% 37.5%; 
   grid-template-rows: 60px; 
@@ -52,7 +52,7 @@
 .link {
   position: relative;
   display: inline-block;
-  color: #000000;
+  color: #FFFFFF;
   transition: color 0.3s; /* Transition de couleur de texte de 0.3 seconde */
 }
 
@@ -92,8 +92,8 @@
 
 
 .Header-button {
-  color: #000000;
-  border: 2px solid #000000;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 30px;
   padding: 9px 15px;
   font-family: michroma;
