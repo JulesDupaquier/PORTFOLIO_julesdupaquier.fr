@@ -22,7 +22,7 @@
 <style>
 
 .header {
-  background-color: #000000;
+  background-color: #FFFFFF;
   display: grid; 
   grid-template-columns: 25% 37.5% 37.5%; 
   grid-template-rows: 60px; 
@@ -52,7 +52,7 @@
 .link {
   position: relative;
   display: inline-block;
-  color: #FFFFFF;
+  color: #000000;
   transition: color 0.3s; /* Transition de couleur de texte de 0.3 seconde */
 }
 
@@ -62,7 +62,7 @@
   position: absolute;
   width: 0;
   height: 2px; /* Ajustez l'épaisseur de la ligne */
-  background-color: #ff0000; /* Couleur de la ligne */
+  background-color: #000000; /* Couleur de la ligne */
   transition: width 0.3s, left 0.3s; /* Transition de largeur de la ligne et de la position à gauche de 0.3 seconde */
 }
 
@@ -77,7 +77,7 @@
 }
 
 .link:hover {
-  color: #ff0000; /* Texte rouge lors du survol */
+  color: #000000; /* Texte rouge lors du survol */
 }
 
 .link:hover::before,
@@ -92,18 +92,19 @@
 
 
 .Header-button {
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: #000000;
+  border: 2px solid #000000;
   border-radius: 30px;
   padding: 9px 15px;
   font-family: michroma;
   font-size: 14px;
-  transition: color 0.5s, border 0.5s, border-radius 1s, transform 1s;
+  transition: background-color 1s, color 0.5s, border 0.5s, border-radius 1s, transform 1s;
 }
 
 .Header-button:hover {
-  color: #ff0000;
-  border: 2px solid #ff0000;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 2px solid #000000;
   border-radius: 30px;
   padding: 9px 15px;
   font-family: michroma;

@@ -10,6 +10,12 @@ module.exports = {
         'Michroma': ['Michroma', 'sans-serif'],
       },
       fontSize: {
+        'titre': ['3rem', {
+          fontFamily: 'Helvetica',
+          lineHeight: 'normal',
+          letterSpacing: '-0.01em',
+          fontWeight: '900',
+        }],
         'marquee': ['6rem', {
           fontFamily: 'Helvetica',
           lineHeight: 'normal',
