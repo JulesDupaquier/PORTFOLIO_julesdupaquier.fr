@@ -2,7 +2,7 @@
   <div class="header-container bg-blanc shadow-md p-4 md:flex justify-center items-center fixed top-0 w-full z-50">
     <!-- Logo (visible sur les écrans larges) -->
     <router-link to="/" class="hidden md:block">
-      <img src="/icones/logo.svg" alt="Logo" class="header-logo h-12 w-auto" />
+      <img src="/icones/logo.svg" alt="Logo" class="header-logo h-12 w-auto pr-10" />
     </router-link>
 
     <!-- Logo (visible sur les écrans plus petits) -->
