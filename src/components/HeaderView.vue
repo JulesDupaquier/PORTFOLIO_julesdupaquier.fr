@@ -12,7 +12,7 @@
 
     <!-- Croix pour fermer l'overlay (visible sur les écrans plus petits lorsque le menu est ouvert) -->
     <div v-if="isMenuOpen" class="md:hidden absolute top-4 left-4 z-20">
-      <router-link to="/" class="text-noir hover:text-bleuclair focus:outline-none" @click="toggleMenu">
+      <router-link to="/" class="text-noir focus:outline-none" @click="toggleMenu">
         <img src="/icones/croix.svg" alt="Fermer" class="h-8 w-8" />
       </router-link>
     </div>
@@ -21,7 +21,7 @@
     <div class="md:flex space-x-12 hidden">
       <router-link to="/about" class="link nav-link text-noir font-Michroma">À PROPOS DE MOI</router-link>
       <router-link to="/projets" class="link nav-link text-noir font-Michroma">PROJETS</router-link>
-      <router-link to="/contact" class="link nav-link text-noir font-Michroma">CONTACTEZ-MOI</router-link>
+      <button><router-link to="/contact" class="header-button nav-link text-noir font-Michroma">CONTACTEZ-MOI</router-link></button>
       <!-- ... Ajoutez d'autres liens au besoin -->
     </div>
 
@@ -31,7 +31,7 @@
       <div class="flex flex-col space-y-8 justify-center text-center">
         <router-link to="/about" class="link nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.5s">À PROPOS DE MOI</router-link>
         <router-link to="/projets" class="link nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.6s">PROJETS</router-link>
-        <router-link to="/contact" class="link nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.7s">CONTACTEZ-MOI</router-link>
+        <button><router-link to="/contact" class="header-button nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.7s">CONTACTEZ-MOI</router-link></button>
         <!-- ... Ajoutez d'autres liens au besoin -->
       </div>
     </div>
@@ -102,6 +102,21 @@ export default {
 
 .navlink:hover::after {
   bottom: -2px; /* Réinitialisation de la position en dessous */
+}
+
+.header-button {
+  color: #000000;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  background: #FFFFFF;
+}
+
+.header-button:hover {
+  background: #000000;
+  color: #FFFFFF;
 }
 
 </style>

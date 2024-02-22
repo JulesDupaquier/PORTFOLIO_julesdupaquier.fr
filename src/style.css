@@ -24,25 +24,9 @@ body {
     
   }
 
-// Éléments
+// Éléments de base
 
-button {
-  -webkit-border-radius: 40;
-  -moz-border-radius: 40;
-  border-radius: 40px;
-  font-family: Arial;
-  color: #000000;
-  font-size: 16px;
-  background: #ffffff;
-  padding: 10px 20px 10px 20px;
-  border: solid #000000 2px;
-  text-decoration: none;
-}
 
-button:hover {
-  background: #000000;
-  text-decoration: none;
-}
 
 // Typographie
 
