@@ -11,11 +11,9 @@
             <p class="mt-2 text-xl text-noir font-normal font-Helvetica">Bienvenue sur julesdupaquier.fr ! Je m’appelle Jules, j’ai 20 ans, et à travers ce site, vous entrez dans mon univers.</p>
         </div>
         <div class="chevron absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
-            <a href="#bonjour">
-                <svg class="h-12 w-12 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </a>
+            <svg class="h-12 w-12 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
         </div>
     </div>
     <div class="container">
@@ -42,11 +40,46 @@
             </p>
         </div>
     </div>
-    <div id="#bonjour" class="bg-blanc pt-10">
-        <h1 class="ml-10 text-titre text-noir font-Helvetica pb-10">ALORS, ON COMMENCE PAR QUOI ?</h1>
+
+    <!-- Section Catégories -->
+
+    <div class="bg-blanc pt-20 pb-20">
+        <h1 class="ml-10 text-titre text-noir font-Helvetica pb-10">Alors, on commence par où ?</h1>
+        <div class="flex justify-center">
+            <div class="flex justify-center">
+            <div class="flex flex-col md:flex-row md:space-x-10">
+                <button class="mb-4 md:mb-0"><router-link to="/audiovisuel" class="ctg-button nav-link text-noir font-Michroma">Audiovisuel</router-link></button>
+                <button class="mb-4 md:mb-0"><router-link to="/communication" class="ctg-button nav-link text-noir font-Michroma">Communication</router-link></button>
+                <button class="mb-4 md:mb-0"><router-link to="/design" class="ctg-button nav-link text-noir font-Michroma">Design</router-link></button>
+                <button class="mb-4 md:mb-0"><router-link to="/web-ux-ui" class="ctg-button nav-link text-noir font-Michroma">Web UX/UI</router-link></button>
+                <button class="mb-4 md:mb-0"><router-link to="/bonus" class="ctg-button nav-link text-noir font-Michroma">Plus ?</router-link></button>
+            </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Section Projets -->
+
+    <div class="pt-10 pb-10">
+        <h1 class="ml-10 text-titre text-blanc font-Helvetica pb-10">Quelques un de mes projets...</h1>
+    </div>
+
 </template>
 
 <style>
+.ctg-button {
+  color: #FF0000;
+  padding: 8px 26px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 2px solid #000000;
+  background: #FFFFFF;
+  text-transform: uppercase;
+}
 
+.ctg-button:hover {
+  background: #000000;
+  color: #FFFFFF;
+  border: 2px solid #000000;
+}
 </style>
