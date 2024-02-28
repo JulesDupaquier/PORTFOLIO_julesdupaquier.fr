@@ -18,7 +18,7 @@ module.exports = {
         }],
         'marquee': ['6rem', {
           fontFamily: 'Helvetica',
-          lineHeight: 'normal',
+          lineHeight: '1',
           letterSpacing: '-0.01em',
           fontWeight: '900',
         }],
