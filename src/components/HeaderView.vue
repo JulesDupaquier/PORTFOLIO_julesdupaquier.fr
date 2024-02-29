@@ -117,8 +117,8 @@ export default {
 .header-button:hover {
   background: #000000;
   color: #FFFFFF;
+  border: 2px solid #000000;
 }
 
 </style>
-
 
