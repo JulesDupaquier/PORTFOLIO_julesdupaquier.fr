@@ -1,12 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '../views/Index.vue';
+
 import Projets from '../views/Projets.vue';
+import Crac19 from '../views/projets/19Crac.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/',                           name: 'Index',                  component: Index   },
-    { path: '/projets',                    name: 'Projets',                component: Projets},
+    { path: '/projets',                    name: 'Projets',                component: Projets },
+
+    { path: '/19crac',                     name: '19Crac',                 component: Crac19  },
   ]
 })
 

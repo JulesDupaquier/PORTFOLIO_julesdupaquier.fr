@@ -22,6 +22,12 @@ module.exports = {
           letterSpacing: '-0.01em',
           fontWeight: '900',
         }],
+        'projet': ['6rem', {
+          fontFamily: 'Helvetica',
+          lineHeight: 'normal',
+          letterSpacing: '-0.01em',
+          fontWeight: '900',
+        }],
       },
       fontWeight: {
         thin: '100',
@@ -37,7 +43,7 @@ module.exports = {
         black: '900',
       },
       colors: {
-        noir: '#000000',
+        noir: '#101010',
         noir20: '#202020',
         noir35: '#353535',
         gris: '#777777',
