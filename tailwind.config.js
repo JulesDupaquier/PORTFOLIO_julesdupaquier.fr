@@ -37,9 +37,9 @@ module.exports = {
         black: '900',
       },
       colors: {
-        noiroff: '#000000',
-        noir: '#1c1917',
+        noir: '#000000',
         noir20: '#202020',
+        noir35: '#353535',
         gris: '#777777',
         blanc: '#ffffff',
         rouge: '#FF0000',

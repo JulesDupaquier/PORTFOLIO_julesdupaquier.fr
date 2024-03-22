@@ -1,15 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '../views/Index.vue';
-
-// Import pocketbase
-import PocketBase from 'pocketbase'
-// Objet pocketBase
-const pb = new PocketBase('http://127.0.0.1:8090');
+import Projets from '../views/Projets.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/',                           name: 'Index',                  component: Index },
+    { path: '/',                           name: 'Index',                  component: Index   },
+    { path: '/projets',                    name: 'Projets',                component: Projets},
   ]
 })
 

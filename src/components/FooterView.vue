@@ -1,12 +1,9 @@
-<script>
-</script>
 <template>
-    <div class="bg-noir20 pt-10">
+    <div class="bg-noir pt-10">
         <div class="ml-8 flex items-center">
             <img src="/icones/triple7-light.svg" alt="Triple7-LogoSansBorder" class="w-24 h-auto">
         </div>
         <div class="flex flex-col md:flex-row justify-center text-center space-y-4 md:space-y-0 md:space-x-16 mt-4">
-            <p class="linkf">Condtions Générales d'Utilisation (CGU)</p>
             <p class="linkf">Politique de confidentialité</p>
             <p class="linkf">Mentions légales</p>
         </div>
@@ -20,6 +17,9 @@
             <a href="tel:+33772168094" class="mx-2"><img src="icones/telephone.svg" alt="Telephone"/></a>
         </div>
         <h6 class="text-blanc text-center font-Helvetica pt-6 pb-4">© 2024 Jules Dupaquier. Tous droits réservés.</h6>
+    </div>
+    <div>
+      <p>Remonter tout en haut !</p>
     </div>
 </template>
 
@@ -69,7 +69,8 @@
 }
 
 </style>
-
+<script>
+</script>
 
 
   

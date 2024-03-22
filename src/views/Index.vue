@@ -1,9 +1,3 @@
-<script>
-  
-import PocketBase from 'pocketbase'
-const pb = new PocketBase("http://127.0.0.1:8090");
-
-</script>
 <template>
 
     <!-- Section Vidéo -->
@@ -14,9 +8,9 @@ const pb = new PocketBase("http://127.0.0.1:8090");
         <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
-    <div class="overlay absolute top-1/2 left-0 transform -translate-y-1/2 p-4 text-noir">
+    <div class="overlay absolute top-1/2 left-0 transform -translate-y-1/2 p-4 text-blanc">
         <h2 class="text-titre font-Helvetica">JEUNE AMBITIEUX, JEUNE DYNAMIQUE.</h2>
-        <p class="mt-2 text-xl text-noir font-normal font-Helvetica">Bienvenue sur julesdupaquier.fr ! Je m’appelle Jules, j’ai 20 ans, et à travers ce site, vous entrez dans mon univers.</p>
+        <p class="text-xl text-blanc font-normal font-Helvetica">Bienvenue sur julesdupaquier.fr</p>
     </div>
     <div class="chevron absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
         <svg class="h-16 w-16 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -25,6 +19,7 @@ const pb = new PocketBase("http://127.0.0.1:8090");
         </svg>
     </div>
 </div>
+
 
 
     <!-- Section Présentation -->
@@ -58,71 +53,76 @@ const pb = new PocketBase("http://127.0.0.1:8090");
 
     <!-- Section Parcours -->
 
-    
 
+    <div class="bg-blanc pt-20 pb-20">
+        <h1 class="ml-10 text-titre text-noir font-Helvetica pb-20">MES FORMATIONS</h1>
+          <div
+            class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
+          >
+            <!-- Gauche -->
+            <div class="flex flex-row-reverse md:contents">
+                <!-- Point d'accroche -->
+              <div class="bg-gris col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                <img src="/icones/mmi-montbeliard.svg" alt="MMI" class="h-32 w-32">
+                <h2>MMI Montbéliard</h2>
+                <h2>2022 - 2025</h2>
+                <p>Description de MMI Montbéliard</p>
+                <a href="https://mmimontbeliard.com/">Aller au site</a>
+              </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="bg-blanc">
-    <h1 class="ml-10 text-titre text-noir font-Helvetica pb-10 pt-10">Mes formations</h1>
-    <div class="bg-blanc pb-20 pt-20 mx-auto max-w-md"> 
-      <ol>
-        <li class="border-l-2 border-noir">
-            <div class="md:flex">
-                <div class="block shadow-lg bg-gray-100 ml-6 mr-6 pt-10 pb-6 mb-10 max-w-3xl"> <!-- Définition de la largeur maximale -->
-                    <div class="flex justify-between">
-                        <!-- Contenu de la carte -->
-                        <div class="flex">
-                            <!-- Image -->
-                            <div class="flex items-center justify-center ml-6 mr-8"> <!-- Ajustement de la marge -->
-                                <img src="/icones/mmi-montbeliard.svg" alt="MMI-Montbeliard" class="h-48 w-48"> <!-- Augmentation de la taille de l'image -->
-                            </div>
-                            <!-- Texte -->
-                            <div class="flex flex-col">
-                                <!-- Titre et lieu -->
-                                <div class="mb-4">
-                                    <!-- Colonnes gauche et droite -->
-                                    <div class="flex justify-between">
-                                        <!-- Colonne gauche -->
-                                        <div class="mr-4"> <!-- Ajout de la marge à droite -->
-                                            <p href="#!" class="font-Helvetica text-noir hover:text-gris focus:text-gris duration-300 transition ease-in-out">MMI Montbéliard</p>
-                                            <p href="#!" class="font-Michroma text-gris text-sm">Montbéliard</p>
-                                        </div>
-                                        <!-- Colonne droite -->
-                                        <div class="flex items-center">
-                                            <p href="#!" class="font-Michroma text-noir">2022 - 2025</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Description -->
-                                <p class="text-noir mb-6 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.</p>
-                                <!-- Bouton -->
-                                <button class="gen-button">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-noir pointer-events-none"></div>
                 </div>
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
+              </div>
             </div>
-        </li>
-      </ol>
-    </div>
-   </div>
+            <!-- right -->
+            <div class="flex md:contents">
+              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-noir pointer-events-none"></div>
+                </div>
+                <!-- Point d'accroche -->
+                <div
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
+              </div>
+              <div
+                class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+              >
+                <h3 class="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                <p class="leading-tight text-justify">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Vitae, facilis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,7 +140,7 @@ const pb = new PocketBase("http://127.0.0.1:8090");
     <!-- Section Catégories -->
 
     <div class="bg-blanc pt-20 pb-20 sticky-top">
-        <h1 class="ml-10 text-titre text-noir font-Helvetica pb-10">Alors, on commence par où ?</h1>
+        <h1 class="ml-10 text-titre text-noir font-Helvetica pb-10">ALORS, PAR OÙ COMMENCE T-ON ?</h1>
         <div class="flex justify-center">
             <div class="flex justify-center">
             <div class="flex flex-col md:flex-row md:space-x-10">
@@ -157,7 +157,7 @@ const pb = new PocketBase("http://127.0.0.1:8090");
     <!-- Section Projets -->
 
     <div class="pt-10 pb-10 sticky-top">
-        <h1 class="ml-10 text-titre text-blanc font-Helvetica pb-10">Quelques un de mes projets...</h1>
+        <h1 class="ml-10 text-titre text-blanc font-Helvetica pb-10">QUELQUES UN DE MES PROJETS...</h1>
     </div>
 
 </template>
@@ -212,3 +212,5 @@ const pb = new PocketBase("http://127.0.0.1:8090");
   border: 2px solid #000000;
 }
 </style>
+<script>
+</script>
