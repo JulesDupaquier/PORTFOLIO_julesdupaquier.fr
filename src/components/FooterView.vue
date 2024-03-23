@@ -3,7 +3,7 @@
         <div class="ml-8 flex items-center">
             <img src="/icones/triple7-light.svg" alt="Triple7-LogoSansBorder" class="w-24 h-auto">
         </div>
-        <div class="flex flex-col md:flex-row text-center mt-4">
+        <div class="flex flex-col md:flex-row justify-center mt-4">
             <a href=""></a><p class="linkf text-noir">Télécharger mon CV</p>
         </div>
         <div class="justify-center text-center">
