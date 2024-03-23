@@ -12,7 +12,7 @@ export default {
 };
 </script>
 <template>
-    <div v-for="projet in projets.slice(0, 1)" :key="projet.id">
+    <div v-for="projet in projets.slice(4, 5)" :key="projet.id">
         <div>
                 <div class="video-container relative h-screen"> 
             <img :src=" projet.imageUrl " alt="" class="h-full w-full rounded-lg object-cover">
@@ -34,33 +34,20 @@ export default {
                 <button class="projet-button">{{ projet.tag2 }}</button>
                 <button class="projet-button">{{ projet.tag3 }}</button>
             </div>
-
-
             <div>
-                <h1 class="text-2xl text-blanc font-Helvetica text-left p-16">{{ projet.amorce }}</h1>
+                <h1 class="text-2xl text-blanc font-Helvetica text-left p-10">{{ projet.amorce }}</h1>
             </div>
-            
-            <div class="p-16 place-items-center">
-                <div class="grid grid-cols-2 grid-rows-1 gap-0">
-                    
-                    <img :src=" projet.aboutImageUrl " alt="" class="p-20">
+            <div class="grid grid-cols-2 grid-rows-1 gap-0">
+                <img :src=" projet.aboutImageUrl " alt="" class="p-10">
 
-                    <p class="text-2xl text-justify font-bold p-16">{{ projet.about }}</p>
+                <p class="text-2xl text-justify items-center p-10">{{ projet.about }}</p>
 
-                </div>
-                <div class="p-16">
-
-                    <p class="text-2xl text-justify font-bold p-16">{{ projet.about2 }}</p>
-
-                </div>
-                <div>
-                    <img :src=" projet.fullImageUrl " alt="" class="p-16">
-                </div>
             </div>
-
-            <div class="p-16 text-center">
-                <p class="mb-6 text-center">Découvrez la charte graphique !</p>
-                <a href="/files/R309_19CRAC_Refonte_Jules_DUPAQUIER_2C1.pdf" download="R309_19CRAC_Refonte_Jules_DUPAQUIER_2C1.pdf" class="projet-button">Télécharger le PDF</a>
+            <div>
+                <img :src=" projet.fullImageUrl " alt="" class="p-10">
+            </div>
+            <div>
+                <a :href="projet.projetUrl" class="projet-button" target="_blank">Découvrir le direct</a>
             </div>
         </div>
 
