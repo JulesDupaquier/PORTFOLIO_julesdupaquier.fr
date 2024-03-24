@@ -1,6 +1,4 @@
 <script>
-import PageProjet from '../../components/PageProjet.vue';
-
 import { projets } from '../../../src/projet.js';
 
 export default {
@@ -12,7 +10,7 @@ export default {
 };
 </script>
 <template>
-    <div v-for="projet in projets.slice(4, 5)" :key="projet.id">
+    <div v-for="projet in projets.slice(3, 4)" :key="projet.id">
         <div>
                 <div class="video-container relative h-screen"> 
             <img :src=" projet.imageUrl " alt="" class="h-full w-full rounded-lg object-cover">
@@ -47,15 +45,11 @@ export default {
                 <img :src=" projet.fullImageUrl " alt="" class="p-10">
             </div>
             <div>
-                <a :href="projet.projetUrl" class="projet-button" target="_blank">Découvrir le direct</a>
+                <a :href=" projet.link "><button class="projet-button">Découvrir le direct</button></a>
             </div>
         </div>
 
     </div>
-
-
-  <PageProjet />
-    
 </template>
 
 <style>

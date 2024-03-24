@@ -22,7 +22,7 @@ module.exports = {
           letterSpacing: '-0.01em',
           fontWeight: '900',
         }],
-        'projet': ['6rem', {
+        'projet': ['5rem', {
           fontFamily: 'Helvetica',
           lineHeight: 'normal',
           letterSpacing: '-0.01em',

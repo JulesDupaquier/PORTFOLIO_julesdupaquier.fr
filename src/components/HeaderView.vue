@@ -19,7 +19,6 @@
 
     <!-- Navigation Links (visible sur les écrans larges) -->
     <div class="md:flex space-x-12 hidden">
-      <router-link to="/about" class="link nav-link text-noir font-Michroma">À PROPOS DE MOI</router-link>
       <router-link to="/projets" class="link nav-link text-noir font-Michroma">PROJETS</router-link>
       <button><router-link to="/contact" class="header-button nav-link text-noir font-Michroma">CONTACTEZ-MOI</router-link></button>
       <!-- ... Ajoutez d'autres liens au besoin -->
@@ -29,7 +28,6 @@
     <div v-if="isMenuOpen" class="md:hidden fixed top-0 left-0 w-full h-full bg-blanc z-10 flex items-center justify-center p-4 bg-opacity-95 transition-opacity duration-300 ease-in-out" @click="toggleMenu">
       <!-- Navigation Links (centrés et avec un fondu) -->
       <div class="flex flex-col space-y-8 justify-center text-center">
-        <router-link to="/about" class="link nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.5s">À PROPOS DE MOI</router-link>
         <router-link to="/projets" class="link nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.6s">PROJETS</router-link>
         <button><router-link to="/contact" class="header-button nav-link text-noir font-Michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.7s">CONTACTEZ-MOI</router-link></button>
         <!-- ... Ajoutez d'autres liens au besoin -->

@@ -10,7 +10,7 @@ export default {
 };
 </script>
 <template>
-    <div v-for="projet in projets.slice(0, 1)" :key="projet.id">
+    <div v-for="projet in projets.slice(2, 3)" :key="projet.id">
         <div>
             <div class="video-container relative h-screen"> 
                 <img :src=" projet.imageUrl " alt="" class="h-full w-full rounded-lg object-cover">
@@ -37,23 +37,23 @@ export default {
             <div>
                 <h1 class="text-2xl text-blanc font-Helvetica text-left p-16">{{ projet.definition }}</h1>
             </div>
-            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 items-center">
-                <img :src="projet.aboutImageUrl" alt="" class="p-10 scale-50 h-auto md:w-auto md:h-auto">
-                <p class="text-2xl text-justify items-center p-10">{{ projet.about }}</p>
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+                <img :src="projet.aboutImageUrl" alt="" class="p-10 w-full h-auto md:w-auto md:h-auto">
+                <p class="text-2xl font-bold text-justify items-center p-10">{{ projet.about }}</p>
             </div>
             <div>
                 <p class="text-2xl font-bold text-justify items-center p-10">{{ projet.about2 }}</p>
             </div>
             <div class="p-10">
-                <img :src="projet.fullImageUrl" alt="" class="max-w-auto h-auto scale-75">
+                <img :src="projet.fullImageUrl" alt="" class="max-w-auto h-auto">
             </div>
-            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 items-center">
-                <p class="text-2xl text-justify items-center p-10">{{ projet.about3 }}</p>
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+                <p class="text-2xl font-bold text-justify items-center p-10">{{ projet.about3 }}</p>
                 <img :src="projet.oneImageUrl" alt="" class="p-10 w-full h-auto md:w-auto md:h-auto mx-auto">
             </div>
-            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 items-center">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
                 <img :src="projet.twoImageUrl" alt="" class="p-10 w-full h-auto md:w-auto md:h-auto mx-auto">
-                <p class="text-2xl text-justify items-center p-10">{{ projet.about4 }}</p>
+                <p class="text-2xl font-bold text-justify items-center p-10">{{ projet.about4 }}</p>
             </div>
             <div class="p-16 mb-24 text-center">
                 <p class="mb-6">Découvrez la charte graphique !</p>

@@ -62,7 +62,7 @@
             <!-- Gauche -->
             <div class="flex flex-row-reverse md:contents">
                 <!-- Point d'accroche -->
-              <div class="bg-gris col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+              <div class="bg-noir20 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
                 <img src="/icones/mmi-montbeliard.svg" alt="MMI" class="h-32 w-32">
                 <h2>MMI Montbéliard</h2>
                 <h2>2022 - 2025</h2>
